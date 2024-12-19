@@ -1,0 +1,140 @@
+@import "base";
+
+body {
+  background: rgb(var(--colour-neutral-3, 255, 255, 255));
+  color: rgb(var(--colour-text-and-icon-2, 72, 72, 72));
+  min-height: 100%;
+  font-size: 0.875rem;
+  line-height: 1.571;
+  font-family: var(--ikea-font);
+}
+
+#browser-width {
+  width: 100%;
+  margin: 0 auto;
+  // text-align: center;
+}
+#comment {
+  padding-inline: 3rem;
+  padding-block-end: 1.5rem;
+}
+#combinations {
+  padding: 1rem;
+  select {
+    width: 15rem;
+    padding: 0.5rem;
+  }
+}
+.column.hidden {
+  display: none;
+}
+
+.hnf-content-container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 112rem;
+  margin-inline: auto;
+  box-sizing: border-box;
+
+  min-height: 182px;
+  display: flex;
+  color: rgb(var(--colour-text-and-icon-1, 17, 17, 17));
+  .hnf-tabs {
+    width: 100%;
+  }
+}
+.hnf-tabs-navigation {
+  background-color: white;
+}
+
+@media (min-width: 56.25em) {
+  .hnf-content-container {
+    padding-inline: 3rem;
+  }
+}
+
+#combo-wrapper {
+  min-height: 182px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  color: rgb(var(--colour-text-and-icon-1, 17, 17, 17));
+
+  ul {
+    list-style-type: none;
+    padding-inline: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+.column {
+  display: flex;
+  height: 100%;
+  background-color: rgb(var(--colour-neutral-2));
+}
+
+.hotspot-column {
+  padding-inline-end: 2rem;
+  flex-basis: 380px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  .hotspot-links {
+    &__item {
+      // li
+      line-height: 3;
+      a {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.45;
+
+        color: rgb(var(--colour-text-and-icon-1, 17, 17, 17));
+      }
+    }
+  }
+}
+
+.group-column {
+  flex-basis: 380px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.promo-card {
+  width: 100%;
+  height: 180px;
+  width: 254px;
+  background-color: rgb(var(--colour-static-ikea-family));
+}
+
+@media (min-width: 1280px) {
+  .promo-card {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1480px) {
+  #combo-wrapper.one-group-three-cards {
+    .promo-3 {
+      display: none;
+    }
+  }
+  #combo-wrapper.three-groups-one-card {
+    .promo-1 {
+      display: none;
+    }
+  }
+  #combo-wrapper.two-groups-two-cards {
+    .promo-2 {
+      display: none;
+    }
+  }
+}
+
+/* 
+Between 1200 and 1400 hide the third card
+*/
