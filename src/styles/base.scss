@@ -75,7 +75,6 @@
 ::after {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
@@ -122,4 +121,13 @@ nav,
 section {
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=base.css.map */
+}
+
+// body {
+//   background: rgb(var(--colour-neutral-1, 255, 255, 255));
+//   color: rgb(var(--colour-text-and-icon-2, 72, 72, 72));
+//   min-height: 100%;
+//   font-size: 0.875rem;
+//   line-height: 1.571;
+//   font-family: "Noto IKEA", "Noto Sans";
+// }
