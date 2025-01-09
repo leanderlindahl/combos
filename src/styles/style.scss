@@ -104,6 +104,18 @@ body {
   flex-grow: 1;
 }
 
+.group-links__item {
+  a {
+    color: black;
+    text-decoration: none;
+
+  }
+
+  &:not(:first-child) {
+    margin-block-start: 0.75rem;
+  }
+}
+
 .promo-card {
   width: 100%;
   height: 180px;
